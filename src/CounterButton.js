@@ -7,15 +7,17 @@ import './CounterButton.css';
 class CounterButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hovered: false }
+    this.state = { 
+      fill: 'transparent'
+    }
   }
   render() {
     return (
       <button 
         className='Button_counterButton'
-        onMouseEnter={() => this.setState({hovered: true})}
-        onMouseLeave={() => this.setState({hovered: false})}>
-        {this.state.hovered ? <FilledIcon/> : <OutlinedIcon/>}
+        onMouseEnter={() => this.setState({fill: '#cccccc'})}
+        onMouseLeave={() => this.setState({fill: 'transparent'})}>
+        <FilledIcon fill={this.state.fill} stroke='#cccccc' /> 
       </button>
     );
   }
