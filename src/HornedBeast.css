@@ -1,0 +1,10 @@
+.BeastCard {
+  border: 1px solid black;
+  width: min-content;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.BeastCard_image {
+  border-radius: 8px;
+}
