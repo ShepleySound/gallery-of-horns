@@ -1,13 +1,13 @@
 import React from 'react';
 import {ReactComponent as OutlinedIcon} from './assets/favorite_48px_outlined.svg';
-import {ReactComponent as FilledIcon} from './assets/favorite_48px_filled.svg';
+import {ReactComponent as FilledIcon} from './assets/favorite_24px_filled.svg';
 
 import './CounterButton.css';
 
 class CounterButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       fill: 'transparent'
     }
   }

@@ -5,11 +5,11 @@ import Footer from './Footer.js';
 
 function App() {
   return (
-    <div className='App'>
+    <>
       <Header title="Horned Beasts" />
       <Main />
       <Footer authorName="Robert Shepley" />
-    </div>
+    </>
   );
 }
 
