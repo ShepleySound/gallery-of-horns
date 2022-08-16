@@ -1,6 +1,6 @@
 .BeastCard {
-  border: 1px solid black;
-  width: min-content;
+  border: 2px solid black;
+  width: 248px;
   padding: 12px;
   border-radius: 12px;
 }
