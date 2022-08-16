@@ -1,10 +1,25 @@
 .BeastCard {
   border: 2px solid black;
-  width: 248px;
-  padding: 12px;
-  border-radius: 12px;
+  width: 224px;
+  overflow: hidden;
+  /* padding: 12px; */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BeastCard_description {
+  padding: .5em;
 }
 
 .BeastCard_image {
-  border-radius: 8px;
+  /* border-radius: 8px; */
+}
+
+.BeastCard_buttonRow {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: 4px;
+
 }
