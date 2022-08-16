@@ -1,10 +1,11 @@
 import React from "react";
+import './Footer.css'
 
 class Footer extends React.Component {
   render() {
     return (
-      <footer>
-        <h2>{this.props.authorName}</h2>
+      <footer className="Footer">
+        <p className="Footer_authorName">{this.props.authorName}</p>
       </footer>
     )
   }

@@ -37,7 +37,7 @@ class Main extends React.Component {
   })
   render() {
     return (
-      <main>{this.beastItems}</main>
+      <main className='Main'>{this.beastItems}</main>
     )
   }
 }
