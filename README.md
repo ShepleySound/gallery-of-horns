@@ -4,18 +4,25 @@ The project demonstrates a basic use of React, using curriculum and assets from 
 
 ## Time Estimates
 
-### Feature Name - Styling
-
+### August 16, 2022
+#### Feature Name - Styling
 - Estimated Time: 1 hour (ongoing)
 - Start Time: 2PM
 - Finish Time: 2:45PM
 
-### Feature Name - Counter
+#### Feature Name - Counter
 
 - Estimated Time: 2 hours
 - Start Time: 3PM
 - Finish Time: 4:30PM
 
+### August 17, 2022
+
+#### Feature Name - Bootstrap Implementation
+
+- Estimated Time: 2 hours
+- Start Time: 3PM
+- Finish Time: 4:30PM
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
 To learn React, check out the [React documentation](https://reactjs.org/).
