@@ -16,7 +16,7 @@ class HornedBeast extends React.Component {
       return {count: this.state.count + 1}
     })
   }
-  
+
   render() {
     return (
       <figure key={this.props._id} title={this.props.title} className="BeastCard">
