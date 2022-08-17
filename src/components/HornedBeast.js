@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from 'react-bootstrap/Modal'
 import Counter from './Counter';
 import './HornedBeast.css';
 
@@ -7,7 +8,8 @@ class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
+      show: false
     }
   }
 
@@ -20,7 +22,7 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <div key={this.props._id} className="BeastCard">
-        <figure className="BeastCard_figure">
+        <figure onClick={this.props.handleShow} className="BeastCard_figure">
           <img className="BeastCard_image" src={this.props.beastImage} alt={this.props.description} width="220"></img>
           <figcaption className="BeastCard_title">{this.props.title}</figcaption>
         </figure>
@@ -28,6 +30,7 @@ class HornedBeast extends React.Component {
             <Counter handleClick={this.handleClick} count={this.state.count}/>
           </div>
       </div>
+      
     )
   }
 }
