@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as FilledIcon} from './assets/favorite_24px_filled.svg';
+import {ReactComponent as FilledIcon} from '../assets/favorite_24px_filled.svg';
 
 import './CounterButton.css';
 
