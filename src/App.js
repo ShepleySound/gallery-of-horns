@@ -13,11 +13,24 @@ class App extends React.Component {
     super(props);
     this.state = {
       show: false,
-      selectedBeast: null
+      selectedBeast: null,
+      searchResults: beastData,
     }
   }
 
+  handleClick = (clicked) => {
+    console.log(clicked)
+    console.log("Favorited")
+    // this.setState(prevState => {
+    //   searchResults: prevState.searchResults.map(beast => {
+    //     beast._id === key ? { ...beast, count: count + 1}: beast
+    //   }) {
+    //   }
+    
+  }
+
   handleSelect = (selected) => {
+    console.log(selected)
     this.handleShow()
     this.setState({
       selectedBeast: selected
@@ -36,11 +49,19 @@ class App extends React.Component {
     })
   }
 
+  handleChange = (event) => {
+    const filteredBeasts = beastData
+      .filter(beast => beast.keyword.includes(event.target.value))
+    this.setState(() => {
+      return {searchResults: filteredBeasts}
+    })
+  }
+
   render() {
     return (
       <>
-        <Header title="Horned Beasts" />
-        <Main beastData={beastData} handleSelect={this.handleSelect}/>
+        <Header title="Horned Beasts" handleChange={this.handleChange}/>
+        <Main beastData={this.state.searchResults} handleClick={this.handleClick} handleSelect={this.handleSelect}/>
         <Footer authorName="Robert Shepley" />
         <SelectedBeast show={this.state.show} handleClose={this.handleClose} beast={this.state.selectedBeast}></SelectedBeast>
       </>

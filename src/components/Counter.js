@@ -14,7 +14,6 @@ class Counter extends React.Component {
     return (
       <div 
       className='Counter' 
-      onClick={this.props.handleClick}
       onMouseEnter={() => this.setState({fill: '#cccccc'})}
       onMouseLeave={() => this.setState({fill: 'transparent'})}>
         <CounterButton fill={this.state.fill}/>

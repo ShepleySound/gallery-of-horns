@@ -10,18 +10,21 @@ class Main extends React.Component {
     }
   }
 
-  beastItems = this.props.beastData.map((beast) => {
-    return <HornedBeast 
-      key={beast._id} 
-      title={beast.title} 
-      beastImage={beast.image_url} 
-      description={beast.description}
-      handleSelect={() => this.props.handleSelect(beast)}/>
-  })
   render() {
     return (
       <main className='Main'>
-        {this.beastItems}
+        {
+          this.props.beastData.map((beast) => 
+          <HornedBeast 
+            key={beast._id} 
+            title={beast.title} 
+            beastImage={beast.image_url} 
+            description={beast.description}
+            count={beast.count}
+            handleClick={this.props.handleClick}
+            handleSelect={() => this.props.handleSelect(beast)}/>
+          )
+        }
       </main>
     )
   }
