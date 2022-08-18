@@ -4,17 +4,12 @@ import {ReactComponent as FilledIcon} from '../assets/favorite_24px_filled.svg';
 import './CounterButton.css';
 
 class CounterButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fill: 'transparent'
-    }
-  }
+
   render() {
     return (
       <button 
         className='Button_counterButton'>
-        <FilledIcon fill={this.state.fill} stroke='#cccccc' /> 
+        <FilledIcon fill={this.props.fill} stroke='#cccccc' /> 
       </button>
     );
   }
