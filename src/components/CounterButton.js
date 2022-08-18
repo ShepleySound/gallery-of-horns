@@ -13,9 +13,7 @@ class CounterButton extends React.Component {
   render() {
     return (
       <button 
-        className='Button_counterButton'
-        onMouseEnter={() => this.setState({fill: '#cccccc'})}
-        onMouseLeave={() => this.setState({fill: 'transparent'})}>
+        className='Button_counterButton'>
         <FilledIcon fill={this.state.fill} stroke='#cccccc' /> 
       </button>
     );
