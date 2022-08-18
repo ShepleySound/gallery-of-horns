@@ -22,11 +22,11 @@ class Header extends React.Component {
               <Form.Control 
                 size="md" 
                 placeholder="Search" 
-                onChange={(event) => { this.props.handleChange(event) } }>
+                onChange={(event) => { this.props.handleSearchChange(event) } }>
               </Form.Control>
             </FloatingLabel>
           </Form>
-            {/* <SearchBar handleChange={this.props.handleChange}></SearchBar> */}
+            {/* <SearchBar handleSearchChange={this.props.handleSearchChange}></SearchBar> */}
         </div>
       </header>
     )

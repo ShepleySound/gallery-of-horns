@@ -21,7 +21,7 @@ class Main extends React.Component {
             beastImage={beast.image_url} 
             description={beast.description}
             count={beast.count}
-            handleClick={this.props.handleClick}
+            handleClick={() => this.props.handleClick(beast)}
             handleSelect={() => this.props.handleSelect(beast)}/>
           )
         }

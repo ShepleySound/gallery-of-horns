@@ -11,7 +11,7 @@ class SearchBar extends React.Component {
           controlId="floatingInput"
           label="Search"
         >
-        <Form.Control size="md" placeholder="Search" onChange={this.props.handleChange}></Form.Control>
+        <Form.Control size="md" placeholder="Search" onChange={this.props.handleSearchChange}></Form.Control>
         </FloatingLabel>
       </Form>
     )

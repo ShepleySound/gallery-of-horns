@@ -14,26 +14,28 @@ class App extends React.Component {
     this.state = {
       show: false,
       selectedBeast: null,
-      searchResults: beastData,
+      beastList: beastData,
+      displayedBeasts: beastData
     }
   }
 
-  handleClick = (clicked) => {
-    console.log(clicked)
-    console.log("Favorited")
-    // this.setState(prevState => {
-    //   searchResults: prevState.searchResults.map(beast => {
-    //     beast._id === key ? { ...beast, count: count + 1}: beast
-    //   }) {
-    //   }
-    
+  handleClick = (beast) => {
+    this.setState(prevState => (
+      {
+        beastList: prevState.beastList.map(
+        el => el._id === beast._id ? { ...el, count: el.count + 1 } : el),
+
+        displayedBeasts: prevState.displayedBeasts.map(
+          el => el._id === beast._id ? { ...el, count: el.count + 1 }: el
+      )
+    }))
   }
 
-  handleSelect = (selected) => {
-    console.log(selected)
+  handleSelect = (beast) => {
+    console.log(beast)
     this.handleShow()
     this.setState({
-      selectedBeast: selected
+      selectedBeast: beast
     })
   }
 
@@ -49,19 +51,24 @@ class App extends React.Component {
     })
   }
 
-  handleChange = (event) => {
-    const filteredBeasts = beastData
-      .filter(beast => beast.keyword.includes(event.target.value))
-    this.setState(() => {
-      return {searchResults: filteredBeasts}
+  // handleFilterChange = (event) => {
+  //   this.setState(state => {
+  //     return {displayedBeasts:state.displayedBeasts
+  //       .filter(beast => beast.horns)}
+  //   })
+  // }
+  handleSearchChange = (event) => {
+    this.setState(state => {
+      return {displayedBeasts: state.beastList
+        .filter(beast => beast.keyword.includes(event.target.value))}
     })
   }
 
   render() {
     return (
       <>
-        <Header title="Horned Beasts" handleChange={this.handleChange}/>
-        <Main beastData={this.state.searchResults} handleClick={this.handleClick} handleSelect={this.handleSelect}/>
+        <Header title="Horned Beasts" handleSearchChange={this.handleSearchChange}/>
+        <Main beastData={this.state.displayedBeasts} handleClick={this.handleClick} handleSelect={this.handleSelect}/>
         <Footer authorName="Robert Shepley" />
         <SelectedBeast show={this.state.show} handleClose={this.handleClose} beast={this.state.selectedBeast}></SelectedBeast>
       </>
