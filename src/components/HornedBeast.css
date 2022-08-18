@@ -2,11 +2,24 @@
   border: 2px solid black;
   width: 224px;
   overflow: hidden;
-  /* padding: 12px; */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   height: min-content;
+  transition: background-color 250ms;
+  cursor: pointer;
+}
+
+.BeastCard:hover {
+  background-color: #806054a1;
+}
+
+.BeastCard:active {
+  background-color: #65648fcb;
+}
+
+.BeastCard_image {
+  opacity: 80%;
 }
 
 .BeastCard_figure {
@@ -19,14 +32,11 @@
   line-height: 1em;
 }
 
-.BeastCard_image {
-  /* border-radius: 8px; */
-}
-
 .BeastCard_buttonRow {
   display: flex;
   justify-content: center;
   margin-top: auto;
-  padding: 4px;
-  background-color: #ffffff12;
+  cursor: pointer;
+  user-select: none;
+  /* background-color: #ffffff12; */
 }

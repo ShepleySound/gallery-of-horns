@@ -1,10 +1,18 @@
+.Modal .modal-content {
+  background-color: #282c34;
+  color: #cccccc;
+}
+
 .Modal_title {
   font-size: 2em;
+  width: 100%;
 }
 
 .Modal_image {
   border-radius: 8px;
   box-shadow: 0px 0px 12px -6px #000000a0;
+  width: 100%;
+  height: auto;
 }
 
 .Modal_description {

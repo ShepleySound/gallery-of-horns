@@ -13,16 +13,15 @@ class SelectedBeast extends React.Component {
 
   render() {
     return (
-      <Modal size="lg" show={this.props.show} onHide={this.props.handleClose}>
-        <Modal.Header closeButton>
+      <Modal className="Modal" size="md" show={this.props.show} onHide={this.props.handleClose}>
+        <Modal.Header closeButton closeVariant="white">
           <Modal.Title className="Modal_title">{this.props.beast?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img 
             className="Modal_image"
             src={this.props.beast?.image_url} 
-            alt={this.props.beast?.title}
-            width="450">
+            alt={this.props.beast?.title}>
           </img>
           <p className="Modal_description">{this.props.beast?.description}</p>
         </Modal.Body>
