@@ -1,5 +1,11 @@
+.Modal .modal-content {
+  background-color: #282c34;
+  color: #cccccc;
+}
+
 .Modal_title {
   font-size: 2em;
+  width: 100%;
 }
 
 .Modal_image {
