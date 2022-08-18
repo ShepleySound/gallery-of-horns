@@ -89,7 +89,7 @@
   },
   {
     "_id": 12,
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/220px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/440px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
     "title": "Markhor",
     "description": "These wild goats eat snakes, then secrete a foam that locals fight over for the antivemon properties -- how cool is that?",
     "keyword": "markhor",
@@ -153,7 +153,7 @@
   },
   {
     "_id": 20,
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Smaug_par_David_Demaret.jpg/290px-Smaug_par_David_Demaret.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Smaug_par_David_Demaret.jpg/600px-Smaug_par_David_Demaret.jpg",
     "title": "Smaug",
     "description": "Fan illustration of Smaug from 'The Hobbit'",
     "keyword": "dragon",
