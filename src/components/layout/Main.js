@@ -1,7 +1,6 @@
 import React from 'react';
 import './Main.css'
 import HornedBeast from '../HornedBeast';
-import beastData from '../../utils/beast-data.json';
 
 class Main extends React.Component {
   constructor(props) {

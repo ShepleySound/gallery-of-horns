@@ -18,7 +18,6 @@ class App extends React.Component {
   }
 
   handleSelect = (selected) => {
-    console.log("HELLO")
     this.handleShow()
     this.setState({
       selectedBeast: selected

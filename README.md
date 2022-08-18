@@ -24,7 +24,22 @@ The project demonstrates a basic use of React, using curriculum and assets from 
 
 - Estimated Time: 1.5 Hours
 - Start Time: 3PM
-- Finish Time:
+- Finish Time: 4:45PM
+
+#### Feature Name - Bootstrap/Page Styling
+
+- Estimated Time: 2 Hours
+- Start Time: 5PM
+- Finish Time: 6:15PM
+  
+## TO-DO
+
+- Change "favorite" button styling
+  - Entire row should change on hover
+  - Implement wave/gradient animation on click
+- Revise color scheme
+- card hover/click styling/animation
+- Revise modal color/styling
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
