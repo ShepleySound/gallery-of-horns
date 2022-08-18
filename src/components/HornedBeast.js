@@ -22,7 +22,7 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <div key={this.props._id} className="BeastCard">
-        <figure onClick={this.props.handleShow} className="BeastCard_figure">
+        <figure onClick={this.props.handleSelect} className="BeastCard_figure">
           <img className="BeastCard_image" src={this.props.beastImage} alt={this.props.description} width="220"></img>
           <figcaption className="BeastCard_title">{this.props.title}</figcaption>
         </figure>
