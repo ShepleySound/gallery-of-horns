@@ -6,10 +6,17 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  height: min-content;
 }
 
-.BeastCard_description {
+.BeastCard_figure {
+  margin: 0;
+}
+
+.BeastCard_title {
   padding: .5em;
+  font-size: 1.2rem;
+  line-height: 1em;
 }
 
 .BeastCard_image {
@@ -21,5 +28,5 @@
   justify-content: center;
   margin-top: auto;
   padding: 4px;
-
+  background-color: #ffffff12;
 }
