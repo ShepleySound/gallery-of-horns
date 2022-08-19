@@ -17,11 +17,12 @@ class Header extends React.Component {
           <Form>
             <FloatingLabel
             controlId="floatingSelect"
-            label="hornFilter"
+            label="Number of Horns"
             >
               <Form.Select
                 onChange={(event) => { this.props.handleFilterChange(event) } }
               >
+                <option value={0}>All</option>
                 <option value={1}>1 Horn</option>
                 <option value={2}>2 Horns</option>
                 <option value={3}>3 Horns</option>
