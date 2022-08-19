@@ -3,6 +3,8 @@
 The project demonstrates a basic use of React and React-Bootstrap, using curriculum and assets from Code Fellows.  
 The page allows the user to "like" a series of images. Images can be filtered by internal keywords using a search bar and by "number of horns" using a dropdown selector.
 
+### [Live Site](https://shepleysound-gallery-of-horns.netlify.app)
+
 ## Time Estimates
 
 ### August 16, 2022
