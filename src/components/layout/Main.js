@@ -14,7 +14,8 @@ class Main extends React.Component {
     return (
       <main className='Main'>
         {
-          this.props.beastData.map((beast) => 
+          this.props.beastData.filter(beast => beast.isSearchMatch && beast.isHornMatch)
+            .map((beast) => 
           <HornedBeast 
             key={beast._id}
             title={beast.title}

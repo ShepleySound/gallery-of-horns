@@ -54,7 +54,6 @@ class App extends React.Component {
   }
 
   handleFilterChange = (event) => {
-    console.log(event)
     this.setState(state => (
       {
         displayedBeasts: state.beastList
@@ -64,22 +63,25 @@ class App extends React.Component {
     }))
   }
   
+
   handleSearchChange = (event) => {
+    console.log("Search")
     this.setState(state => (
-      { 
-        displayedBeasts: state.beastList
-          .filter(beast => {
-            return beast.keyword.includes(event.target.value);
-          }
-        )
-      }))
+    {
+      beastList: state.beastList.map(
+        beast => {
+          console.log(beast)
+          return beast.keyword.includes(event.target.value) ? {...beast, isSearchMatch: beast.isSearchMatch = true} : {...beast, isSearchMatch: beast.isSearchMatch = false}}
+        
+      )
+    }))
   }
 
   render() {
     return (
       <>
         <Header title="Horned Beasts" handleSearchChange={this.handleSearchChange} handleFilterChange={this.handleFilterChange}/>
-        <Main beastData={this.state.displayedBeasts} handleClick={this.handleClick} handleSelect={this.handleSelect}/>
+        <Main beastData={this.state.beastList} handleClick={this.handleClick} handleSelect={this.handleSelect}/>
         <Footer authorName="Robert Shepley" />
         <SelectedBeast show={this.state.show} handleClose={this.handleClose} beast={this.state.selectedBeast}></SelectedBeast>
       </>
