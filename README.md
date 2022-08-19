@@ -35,10 +35,15 @@ The page allows the user to "like" a series of images. Images can be filtered by
   
 ## To-Do
 
-- Change "favorite" button styling
-  - Implement wave/gradient animation on click
-- Revise color scheme
-- card hover/click styling/animation
+- Change "favorite" button styling.
+  - Implement wave/gradient animation on click.
+- Revise color scheme.
+- card hover/click styling/animation.
+- Implement case-insensitive search.
+- Fix styling details.
+  - Footer
+  - Page padding
+- Move search/filter to Main component.
 - Place these to-do's in GitHub Issues.
 
 ## Resources
