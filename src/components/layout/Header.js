@@ -1,5 +1,4 @@
 import React from "react";
-import SearchBar from "../SearchBar";
 import {ReactComponent as VikingHorn} from '../../assets/vikingHorn_96px_dark.svg';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from "react-bootstrap/FloatingLabel";
@@ -39,7 +38,6 @@ class Header extends React.Component {
               </Form.Control>
             </FloatingLabel>
           </Form>
-            {/* <SearchBar handleSearchChange={this.props.handleSearchChange}></SearchBar> */}
         </div>
       </header>
     )
