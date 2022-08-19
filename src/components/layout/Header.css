@@ -1,9 +1,32 @@
 .Header {
-  padding: 20px 0px 40px;
+  padding: 20px 0px;
   margin-bottom: 40px;
   border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  width: 100%
 }
 
-.Header_headerText {
-  font-size: 1em;
+.Header_logoContainer {
+  display: flex;
+}
+
+.Header_logoImage {
+  width: 48px;
+  height: 48px;
+}
+
+.Header_logoTitle {
+  font-size: 2rem;
+  display: none;
+}
+
+.Header_searchBar {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 500px) {
+  .Header_logoTitle {
+    display: block;
+  }
 }
