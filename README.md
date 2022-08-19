@@ -1,46 +1,47 @@
 # Horned Beasts - First React Project
 
-The project demonstrates a basic use of React, using curriculum and assets from Code Fellows. When complete, the page will allow users to select from a series of pictures to "like" them. Filtering options will also be available.
+The project demonstrates a basic use of React and React-Bootstrap, using curriculum and assets from Code Fellows.  
+The page allows the user to "like" a series of images. Images can be filtered by internal keywords using a search bar and by "number of horns" using a dropdown selector.
 
 ## Time Estimates
 
 ### August 16, 2022
 
-#### Feature Name - Styling
-
-- Estimated Time: 1 hour (ongoing)
-- Start Time: 2PM
-- Finish Time: 2:45PM
-
-#### Feature Name - Counter
-
-- Estimated Time: 2 hours
-- Start Time: 3PM
-- Finish Time: 4:30PM
+| Feature Name | Estimated Time | Start Time | Finish Time |
+| ------------ | -------------- | ---------- | ----------- |
+| Styling | 1 Hour | 2PM | 2:45PM |
+| Counter | 2 Hours | 3PM | 4:30PM |
 
 ### August 17, 2022
 
-#### Feature Name - Bootstrap Implementation
+| Feature Name | Estimated Time | Start Time | Finish Time |
+| ------------ | -------------- | ---------- | ----------- |
+| Bootstrap Implementation | 1.5 Hours | 3PM | 4:45PM |
+| Bootstrap/Page Styling | 2 Hours | 5PM | 6:15PM |
 
-- Estimated Time: 1.5 Hours
-- Start Time: 3PM
-- Finish Time: 4:45PM
+### August 18, 2022
 
-#### Feature Name - Bootstrap/Page Styling
+| Feature Name | Estimated Time | Start Time | Finish Time |
+| ------------ | -------------- | ---------- | ----------- |
+| Fuzzy Search | 1 Hour | 12PM | 1:15PM |
+| Fix Favorite State | 1 Hour | 1:15PM | 4PM |
+| Horn Filter | 1 Hour | 3PM | 3:30PM |
 
-- Estimated Time: 2 Hours
-- Start Time: 5PM
-- Finish Time: 6:15PM
+### August 19, 2022
+
+| Feature Name | Estimated Time | Start Time | Finish Time |
+| ------------ | -------------- | ---------- | ----------- |
+| Filter/search interaction | 2 Hours | 7AM | 8:30PM |
   
-## TO-DO
+## To-Do
 
 - Change "favorite" button styling
-  - Entire row should change on hover
   - Implement wave/gradient animation on click
 - Revise color scheme
 - card hover/click styling/animation
-- Revise modal color/styling
+- Place these to-do's in GitHub Issues.
 
----
+## Resources
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/).  
+Modal and Form implemented using [React-Bootstrap](https://react-bootstrap.github.io/).
