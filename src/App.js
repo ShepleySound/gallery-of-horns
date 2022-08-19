@@ -16,8 +16,6 @@ class App extends React.Component {
       selectedBeast: null,
       beastList: beastData,
       displayedBeasts: beastData,
-      hornsFilterNumber: null,
-      searchQuery: ''
     }
   }
 
@@ -27,10 +25,7 @@ class App extends React.Component {
         // Keep a "main" list of beasts to hold all state.
         beastList: prevState.beastList.map(
         el => el._id === beast._id ? { ...el, count: el.count + 1 } : el),
-        // Update a curated/filtered list of beasts.
-        displayedBeasts: prevState.displayedBeasts.map(
-          el => el._id === beast._id ? { ...el, count: el.count + 1 }: el
-      )
+
     }))
   }
 
@@ -56,22 +51,31 @@ class App extends React.Component {
   handleFilterChange = (event) => {
     this.setState(state => (
       {
-        displayedBeasts: state.beastList
-        .filter(beast => {
-          return (beast.horns === parseInt(event.target.value))
+        beastList: state.beastList
+        .map(beast => {
+          // Make all true if the selector is set to "All" (value = 0)
+          if (!parseInt(event.target.value)) {
+            return {...beast, isHornMatch: beast.isHornMatch = true}
+          }
+          // Set flag in the actual beast object depending on selector.
+          return beast.horns === parseInt(event.target.value) ?
+            {...beast, isHornMatch: beast.isHornMatch = true} :
+            {...beast, isHornMatch: beast.isHornMatch = false}
         })
     }))
   }
   
 
   handleSearchChange = (event) => {
-    console.log("Search")
     this.setState(state => (
     {
-      beastList: state.beastList.map(
-        beast => {
-          console.log(beast)
-          return beast.keyword.includes(event.target.value) ? {...beast, isSearchMatch: beast.isSearchMatch = true} : {...beast, isSearchMatch: beast.isSearchMatch = false}}
+      beastList: state.beastList
+      .map(beast => {
+          // Set flag in the actual beast object depending on search.
+          return beast.keyword.includes(event.target.value) ? 
+            {...beast, isSearchMatch: beast.isSearchMatch = true} : 
+            {...beast, isSearchMatch: beast.isSearchMatch = false}
+        }
         
       )
     }))
