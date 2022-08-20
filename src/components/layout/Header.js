@@ -2,6 +2,8 @@ import React from "react";
 import {ReactComponent as VikingHorn} from '../../assets/vikingHorn_96px_dark.svg';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Row from "react-bootstrap/Row";
+
 
 import './Header.css';
 

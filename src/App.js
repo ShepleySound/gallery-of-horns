@@ -84,7 +84,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header title="Horned Beasts" handleSearchChange={this.handleSearchChange} handleFilterChange={this.handleFilterChange}/>
+        <Header title="Gallery of Horns" handleSearchChange={this.handleSearchChange} handleFilterChange={this.handleFilterChange}/>
         <Main beastData={this.state.beastList} handleClick={this.handleClick} handleSelect={this.handleSelect}/>
         <Footer authorName="Robert Shepley" />
         <SelectedBeast show={this.state.show} handleClose={this.handleClose} beast={this.state.selectedBeast}></SelectedBeast>
