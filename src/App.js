@@ -15,7 +15,6 @@ class App extends React.Component {
       show: false,
       selectedBeast: null,
       beastList: beastData,
-      displayedBeasts: beastData,
     }
   }
 
@@ -47,6 +46,7 @@ class App extends React.Component {
       return {show: false}
     })
   }
+
 
   handleFilterChange = (event) => {
     this.setState(state => (
